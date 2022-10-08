@@ -1,4 +1,74 @@
-body{
-    background-color: azure;
-    color: aqua;
+*,
+*::before,
+*::after {
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9fd;
+}
+
+textarea {
+    resize: none;
+}
+.form {
+    width: 600px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    /* outline: 1px solid blue; */
+    margin-bottom: 20px;
+
+}
+.form-field label {
+    margin-bottom: 5px;
+    padding: 6px 10px;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.form-field input::placeholder {
+    color: tomato;
+}
+.group {
+    margin-bottom: 20px;
+}
+.group-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.topic-options, .experience-options {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.topic-options li {
+    display: flex;
+    align-items: center;
+}
+.topic-options input[type="checkbox"] {
+/* width: 40px;
+height: 40px; */
+}
+.topic-options label {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.form .date {
+    border-color: red;
+    border-radius: 4px;
+    padding: 20px;
+}
+.form .comment {
+    padding: 20px;
 }
