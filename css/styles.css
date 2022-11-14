@@ -1,92 +1,37 @@
 *,
-*::before,
-*::after {
+::after,
+::before {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: sans-serif;
+
     line-height: 1.5;
     background-color: #f9f9fd;
+    color:teal;
 }
-.box1, .box2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
-    border: 2px solid tomato;
-}
-    @media screen and (max-width: 768px) {
-            .box1 {
-                display: none;
-                /* margin-bottom: 10px */
-            }
-        }
-        @media screen and (min-width: 768px) {
-            .box1 {
-                margin-bottom: 50px;
-            }
-        }
-
-/* textarea {
-    resize: none;
-}
-.form {
-    width: 600px;
-    outline: 1px solid tomato;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-.form-field {
-    display: flex;
-    flex-direction: column;
-    /* outline: 1px solid blue; */
-    /* margin-bottom: 20px; */
-
-/* }
-.form-field label {
-    margin-bottom: 5px;
-    padding: 6px 10px;
+a {
+    font-size: 28px;
 }
 
-.form-field input {
-    margin: 0;
-    padding: 6px 10px;
-    border-radius: 4px;
-}
-.form-field input::placeholder {
-    color: tomato;
-}
-.group {
-    margin-bottom: 20px;
-}
-.group-title {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.topic-options, .experience-options {
+ul {
     padding: 0;
-    margin: 0;
     list-style: none;
 }
-.topic-options li {
-    display: flex;
-    align-items: center;
+
+.menu>.menu-item {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
 }
-.topic-options input[type="checkbox"] {
-/* width: 40px;
-height: 40px; */
-/* }
-.topic-options label {
-    font-size: 20px;
-    margin-left: 10px;
+
+.sub-menu .menu-item {
+    opacity: 0;
+    margin-left: 100px;
 }
-.form .date {
-    border-color: red;
-    border-radius: 4px;
-    padding: 20px;
+
+.menu-item:hover .menu-item {
+    opacity: 1;
 }
-.form .comment {
-    padding: 20px;
-} */ */ */
